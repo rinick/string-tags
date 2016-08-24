@@ -1,0 +1,25 @@
+{
+  "name": "string-tags",
+  "version": "0.1.0",
+  "description": "common tags for es6 string template",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rinick/string-tags"
+  },
+  "keywords": [
+    "es6",
+    "string",
+    "template",
+    "tag",
+    "regexp",
+    "escape"
+  ],
+  "dependencies": {
+    "xmldom": "^0.1.22"
+  },
+  "author": {
+    "name": "Rick Zhou",
+    "email": "rinick@gmail.com"
+  },
+  "license": "Apache-2.0"
+}
