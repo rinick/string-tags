@@ -9,7 +9,7 @@ let reg1 = tags.regexp`\\\(${input}\gi`;
 
 // this is same as 
 reg1 = /\\\(\*\)/gi;
-or
+// or
 reg1 = new RegExp("\\\\\\(\\*\\)", "gi");
 // use string-tags for regexp only when embedded expressions is needed
 
