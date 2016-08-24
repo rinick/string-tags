@@ -1,6 +1,6 @@
 {
   "name": "string-tags",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "common tags for es6 string template",
   "repository": {
     "type": "git",
