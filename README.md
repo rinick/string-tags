@@ -5,13 +5,17 @@
 const tags = require('../index.js');
 
 let input = "*)";
-let reg1 = tags.regexp`\\\(${input}\gi`;
+let reg1 = tags.regexp`\\\(${input}\g`;
 
-// this is same as 
-reg1 = /\\\(\*\)/gi;
-// or
-reg1 = new RegExp("\\\\\\(\\*\\)", "gi");
-// use string-tags for regexp only when embedded expressions is needed
+// the above line is same as
+let inputEscaped = input.replace(/\*\)/g, "\\$&");
+reg1 = new RegExp("\\\\\\(" + inputEscaped, "g);
+
+// string-tags make regexp much cleaner when you have to use expression in regexp
+
+// don't use string-tags for regexp when there is no expression, use native js syntax instead:
+reg1 = /\\\(\*\)/g;
+
 
 ```
 

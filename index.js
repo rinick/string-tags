@@ -95,7 +95,7 @@
         return domParser.parseFromString(xmlstr, "text/html");
     };
 
-    if (module && module.exports) {
+    if (typeof module !== 'undefined' && module.hasOwnProperty('exports')) {
         module.exports = Tags;
     } else {
         root.Tags = Tags;
