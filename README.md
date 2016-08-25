@@ -9,7 +9,7 @@ let reg1 = tags.regexp`\\\(${input}\g`;
 
 // the above line is same as
 let inputEscaped = input.replace(/\*\)/g, "\\$&");
-reg1 = new RegExp("\\\\\\(" + inputEscaped, "g);
+reg1 = new RegExp("\\\\\\(" + inputEscaped, "g");
 
 // string-tags make regexp much cleaner when you have to use expression in regexp
 
